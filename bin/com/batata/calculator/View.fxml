@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 	
-<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 	
-<HBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Controller">
-	<!-- TODO Add Nodes -->
-</HBox>
+<VBox alignment="CENTER" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.batata.calculator.Controller">
+
+	
+	
+</VBox>
