@@ -9,7 +9,7 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.TextArea?>
 
-<VBox spacing="10" alignment="CENTER" prefWidth="250" prefHeight="270" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.batata.calculator.Controller">
+<VBox spacing="10" alignment="CENTER" prefWidth="250" prefHeight="310" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.batata.calculator.Controller">
 	
 	<fx:define>
 		<Font fx:id="FONT_OUTPUT" size="30"/>
@@ -20,6 +20,10 @@
 		<Rectangle width="230" height="70" fill="TRANSPARENT" stroke="GRAY"/>
 		<Text fx:id="output" font="$FONT_OUTPUT" textAlignment="RIGHT"/>
 	</StackPane>
+	
+	<HBox spacing="10" alignment="CENTER">
+		<Button text="AC" prefWidth="230" font="$FONT" onAction="#onOperatorClick"/>
+	</HBox>
 	
 	<HBox spacing="10" alignment="CENTER">
 		<Button text="7" prefWidth="50" font="$FONT" onAction="#onNumberClick"/>

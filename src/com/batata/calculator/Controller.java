@@ -33,8 +33,17 @@ public class Controller {
 		String value = ((Button)event.getSource()).getText();
 		
 		if (!"=".equals(value)) {
-			if (!operator.isEmpty())
+			if (!operator.isEmpty()) {
+				start = 1;
 				return;
+			}
+			
+			if ("AC".equals(value)) {
+				output.setText("");
+				num1 = 0;
+				start = 1;
+				return;
+			}
 			
 			operator = value;
 			num1 = Long.parseLong(output.getText());
